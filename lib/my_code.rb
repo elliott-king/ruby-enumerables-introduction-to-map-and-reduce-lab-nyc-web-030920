@@ -38,5 +38,5 @@ def reduce_to_total source, start
     sum += source[start]
     start += 1
   end
-  sum
+  return sum
 end
