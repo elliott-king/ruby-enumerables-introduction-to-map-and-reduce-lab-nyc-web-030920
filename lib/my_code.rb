@@ -36,7 +36,7 @@ def reduce_to_total source, start=0
   count = 0
   while count < source.length do
     sum += source[start]
-    start += 1
+    count += 1
   end
   return sum
 end
