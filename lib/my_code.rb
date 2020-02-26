@@ -28,5 +28,15 @@ def map_to_square source
   source.each do |val|
     ret << val * val
   end
-  ret  
+  ret
+end
+
+def reduce_to_total source, start
+  start = start ? start : 0
+  sum = 0
+  while start < source.length do
+    sum += source[start]
+    start += 1
+  end
+  sum
 end
