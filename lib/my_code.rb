@@ -7,7 +7,7 @@ def map_to_negativize source
   ret
 end
 
-def map_to_no_change source 
+def map_to_no_change source
   ret = []
   source.each do |val|
     ret << val
@@ -20,7 +20,7 @@ def map_to_double source
   source.each do |val|
     ret << val * 2
   end
-  ret  
+  ret
 end
 
 def map_to_square source
