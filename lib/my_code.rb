@@ -32,8 +32,9 @@ def map_to_square source
 end
 
 def reduce_to_total source, start=0
-  sum = 0
-  while start < source.length do
+  sum = start
+  count = 0
+  while count < source.length do
     sum += source[start]
     start += 1
   end
