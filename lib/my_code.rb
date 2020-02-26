@@ -31,8 +31,7 @@ def map_to_square source
   ret
 end
 
-def reduce_to_total source, start
-  start = start ? start : 0
+def reduce_to_total source, start=0
   sum = 0
   while start < source.length do
     sum += source[start]
